@@ -1,0 +1,12 @@
+file_format: "1"
+id: sMooth
+name: sMooth
+type: shield
+url: https://github.com/foostan/crkbd/
+requires:
+  - nice_nano
+features:
+  - keys
+siblings:
+  - sMooth_left
+  - sMooth_right
