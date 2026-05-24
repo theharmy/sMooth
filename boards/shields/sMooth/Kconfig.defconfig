@@ -1,18 +1,21 @@
 
-if SHIELD_sMooth_LEFT
+if SHIELD_smooth_LEFT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "sMooth"
+    default "smooth"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_sMooth_LEFT || SHIELD_sMooth_RIGHT
+if SHIELD_smooth_LEFT || SHIELD_smooth_RIGHT
 
 config ZMK_SPLIT
+    default y
+
+config ZMK_BLE
     default y
 
 endif

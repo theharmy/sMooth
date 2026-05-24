@@ -1,6 +1,6 @@
 file_format: "1"
-id: sMooth
-name: sMooth
+id: smooth
+name: smooth
 type: shield
 url: https://github.com/foostan/crkbd/
 requires:
@@ -8,5 +8,5 @@ requires:
 features:
   - keys
 siblings:
-  - sMooth_left
-  - sMooth_right
+  - smooth_left
+  - smooth_right
