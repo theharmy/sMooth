@@ -1,0 +1,5 @@
+config SHIELD_sMooth_LEFT
+	def_bool $(shields_list_contains,sMooth_left)
+
+config SHIELD_sMooth_RIGHT
+	def_bool $(shields_list_contains,sMooth_right)

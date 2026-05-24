@@ -1,3 +1,5 @@
+name: zmk-keyboard-sMooth
+
 build:
   settings:
     board_root: .
