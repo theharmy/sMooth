@@ -255,6 +255,13 @@
             key-positions = <13 14 12>;
             timeout-ms = <30>;
         };
+
+        combo_dollar {
+            bindings = <&kp DE_DOLLAR>;
+            key-positions = <2 10>;
+            timeout-ms = <30>;
+            layers = <1>;
+        };
     };
 
     keymap {
@@ -273,6 +280,14 @@
 &kp DE_PRCNT  &kp DE_EQUAL  &kp DE_PLUS       &kp DE_ASTERISK                      &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N0
 &kp DE_EXCL   &kp DE_AT     &kp DE_AMPERSAND  &kp DE_HASH                          &kp DE_N4  &kp DE_N5  &kp DE_N6  &trans
                                               &trans           &trans      &trans  &trans
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&trans     &trans    &trans    &trans                         &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
+&sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT                      &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
+                               &trans     &trans      &trans  &trans
             >;
         };
     };
