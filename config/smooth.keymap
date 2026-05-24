@@ -11,9 +11,10 @@
                 bindings = <
         
                 &kp DE_R    &kp DE_L    &kp DE_D    &kp DE_B          &kp DE_W    &kp DE_O  &kp DE_U   &kp DE_A
-                &kp DE_X    &kp DE_N    &kp DE_T    &kp DE_H          &kp DE_C    &kp DE_E  &kp DE_I   &kp DE_A
+                &kp DE_X    &kp DE_N    &kp DE_T    &kp DE_H          &kp DE_C    &kp DE_E  &kp DE_I   &kp DE_DOT
                 						&kp DE_D    &kp DE_S          &kp KP_SPACE  &kp DE_K
             >;
         };
     };
  };
+};

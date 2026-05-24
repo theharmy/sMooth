@@ -1,5 +1,2 @@
 #include "smooth.dtsi"
 
-&default_transform {
-	col-offset = <10>;
-	};
