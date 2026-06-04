@@ -278,6 +278,20 @@
             timeout-ms = <30>;
             layers = <0 1>;
         };
+
+        combo_pgdn {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <5 13>;
+            timeout-ms = <30>;
+            layers = <0 1>;
+        };
+
+        combo_pgup {
+            bindings = <&kp PG_UP>;
+            key-positions = <6 14>;
+            timeout-ms = <30>;
+            layers = <0 1>;
+        };
     };
 
     keymap {
@@ -299,10 +313,10 @@
             >;
         };
 
-        layer_2 {
+        nav {
             bindings = <
-&sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT                      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
-&trans     &trans    &trans    &trans                         &trans    &kp END   &kp HOME  &trans
+&kp ESC    &kp DEL   &kp TAB   &kp RET                        &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
+&sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT                      &trans    &kp END   &kp HOME  &trans
                                &trans     &trans      &trans  &trans
             >;
         };
