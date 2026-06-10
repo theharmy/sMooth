@@ -4,7 +4,7 @@
 
 / {
     chosen {
-		zmk,physical-layout = &physical_layout0;
+		zmk,physical_layout = &physical_layout0;
         zmk,kscan = &kscan0;
 		zmk,matrix_transform = &default_transform;
     };
@@ -15,15 +15,14 @@
         columns = <20>;
         rows = <1>;
         map = <
-        RC(0,0)  RC(0,1)  RC(0,2)  RC(0,3)                     RC(0,17)  RC(0,18)  RC(0,17)  RC(0,16)
-        RC(0,4)  RC(0,5)  RC(0,6)  RC(0,7)                     RC(0,17)  RC(0,16)  RC(0,15)  RC(0,14) 
-                  				RC(0,8)  RC(0,9)       RC(0,19)  RC(0,18)
-							
+		RC(0,0)  RC(0,1)  RC(0,2)  RC(0,3)                      RC(0,10) RC(0,11) RC(0,12) RC(0,13) // KORREKTUR 2
+        RC(0,4)  RC(0,5)  RC(0,6)  RC(0,7)                      RC(0,14) RC(0,15) RC(0,16) RC(0,17) // Eindeutige,
+                                  RC(0,8)  RC(0,9)       RC(0,18) RC(0,19)
 	>;
     };
 
 kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-direct";
-        label = "KSCAN";
+        label = "kscan0";
     };
 };
