@@ -25,4 +25,3 @@ kscan0: kscan_0 {
         label = "kscan0";
     };
 };
-  b
