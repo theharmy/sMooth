@@ -1,9 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physsical_layout.dtsi> 
 #include "smooth-layout.dtsi"
 
 / {
     chosen {
-	//	zmk,physical-layout = &physical_layout0;
+		zmk,physical-layout = &physical_layout0;
         zmk,kscan = &kscan0;
 		zmk,matrix_transform = &default_transform;
     };
