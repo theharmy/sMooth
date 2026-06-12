@@ -149,56 +149,56 @@
             bindings = <&kp DE_LT>;
             key-positions = <11 0>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_gt {
             bindings = <&kp DE_GT>;
             key-positions = <12 7>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_qmark {
             bindings = <&kp DE_QUESTION>;
             key-positions = <0 1>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_pipe {
             bindings = <&kp DE_PIPE>;
             key-positions = <1 9>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_caret {
             bindings = <&kp DE_CARET>;
             key-positions = <3 11>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_seven {
             bindings = <&kp DE_N7>;
             key-positions = <4 12>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_eight {
             bindings = <&kp DE_N8>;
             key-positions = <13 5>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_nine {
             bindings = <&kp DE_N9>;
             key-positions = <6 14>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_tab {
@@ -235,28 +235,28 @@
             bindings = <&kp DE_DOLLAR>;
             key-positions = <2 10>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_excl {
             bindings = <&kp DE_EXCLAMATION>;
             key-positions = <7 6>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_sqt {
             bindings = <&kp DE_SQT>;
             key-positions = <4 5>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_dqt {
             bindings = <&kp DE_DOUBLE_QUOTES>;
             key-positions = <5 6>;
             timeout-ms = <30>;
-            layers = <1>;
+            layers = <3>;
         };
 
         combo_dot {
@@ -269,47 +269,47 @@
             bindings = <&kp DE_UNDERSCORE>;
             key-positions = <0 11>;
             timeout-ms = <30>;
-            layers = <0 1>;
+            layers = <0 3>;
         };
 
         combo_minus {
             bindings = <&kp DE_MINUS>;
             key-positions = <12 7>;
             timeout-ms = <30>;
-            layers = <0 1>;
+            layers = <0 3>;
         };
 
         combo_pgdn {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <5 13>;
             timeout-ms = <30>;
-            layers = <0 1>;
+            layers = <0 3>;
         };
 
         combo_pgup {
             bindings = <&kp PG_UP>;
             key-positions = <6 14>;
             timeout-ms = <30>;
-            layers = <0 1>;
+            layers = <0 3>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        norden {
+        a1 {
             bindings = <
-&kp DE_R  &kp DE_N  &kp DE_T  &kp DE_H                               &kp DE_C    &kp DE_E  &kp DE_I  &kp DE_A
-&none     &kp DE_L  &kp DE_D  &kp DE_B                               &kp DE_W    &kp DE_O  &kp DE_U  &none
-                              &kp DE_D  &lt 2 DE_S      &lt 1 SPACE  &sk LSHIFT
+&kp DE_S  &kp DE_L  &kp DE_N  &kp DE_H                               &kp DE_Y    &kp DE_O  &kp DE_U  &kp DE_A
+&none     &kp DE_R  &kp DE_H  &kp DE_T                               &kp DE_C    &kp DE_E  &kp DE_I  &none
+                              &kp DE_D  &lt 2 DE_S      &lt 3 SPACE  &sk LSHIFT
             >;
         };
 
-        sym {
+        a2 {
             bindings = <
-&kp DE_PRCNT  &kp DE_EQUAL  &kp DE_PLUS       &kp DE_ASTERISK                      &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N0
-&kp DE_EXCL   &kp DE_AT     &kp DE_AMPERSAND  &kp DE_HASH                          &kp DE_N4  &kp DE_N5  &kp DE_N6  &trans
-                                              &trans           &trans      &trans  &trans
+&kp DE_F  &kp DE_X  &kp DE_B  &kp DE_M                      &kp DE_W  &kp DE_Q  &kp DE_COMMA  &kp DE_Z
+&trans    &kp DE_V  &kp DE_P  &kp DE_K                      &kp DE_G  &kp DE_J  &kp DE_DOT    &trans
+                              &trans    &trans      &trans  &trans
             >;
         };
 
@@ -318,6 +318,14 @@
 &kp ESC    &kp DEL   &kp TAB   &kp RET                        &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
 &sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT                      &trans    &kp END   &kp HOME  &trans
                                &trans     &trans      &trans  &trans
+            >;
+        };
+
+        sym {
+            bindings = <
+&kp DE_PRCNT  &kp DE_EQUAL  &kp DE_PLUS       &kp DE_ASTERISK                      &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N0
+&kp DE_EXCL   &kp DE_AT     &kp DE_AMPERSAND  &kp DE_HASH                          &kp DE_N4  &kp DE_N5  &kp DE_N6  &trans
+                                              &trans           &trans      &trans  &trans
             >;
         };
     };
