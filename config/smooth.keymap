@@ -335,7 +335,7 @@
         norden {
             bindings = <
 &hml LCTRL DE_R  &kp DE_L            &kp DE_D            &kp DE_B                                           &kp DE_W              &kp DE_O            &kp DE_U            &hmr LCTRL DE_A
-&none            &hml LEFT_ALT DE_N  &hml LEFT_GUI DE_T  &hml DE_H LEFT_SHIFT                               &hmr LEFT_SHIFT DE_C  &hmr LEFT_GUI DE_E  &hmr LEFT_ALT DE_I  &none
+&none            &hml LEFT_ALT DE_N  &hml LEFT_GUI DE_T  &hml LEFT_SHIFT DE_H                               &hmr LEFT_SHIFT DE_C  &hmr LEFT_GUI DE_E  &hmr LEFT_ALT DE_I  &none
                                                          &sk LCTRL             &lt 2 DE_S      &lt 1 SPACE  &sk LSHIFT
             >;
         };
