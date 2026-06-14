@@ -295,7 +295,7 @@
 
         combo_stdio {
             bindings = <&studio_unlock>;
-            key-positions = <8 9 10>;
+            key-positions = <9 10 0>;
             layers = <2>;
             require-prior-idle-ms = <150>;
         };
