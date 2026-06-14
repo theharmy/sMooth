@@ -333,7 +333,7 @@
         a1 {
             bindings = <
 &hml LCTRL DE_S  &kp DE_L            &kp DE_N            &kp DE_H                                 &kp DE_Y         &kp DE_O            &kp DE_U            &hmr LCTRL DE_A
-&none            &hml LEFT_ALT DE_R  &hml LEFT_GUI DE_H  &hml DE_T LSHFT                          &hmr LSHFT DE_C  &hmr LEFT_GUI DE_E  &hmr LEFT_ALT DE_I  &none
+&none            &hml LEFT_ALT DE_R  &hml LEFT_GUI DE_H  &hml DE_T LSHFT                          &hmr LSHFT DE_C  &hmr LEFT_GUI DE_E  &hmr LEFT_ALT DE_I  &trans
                                                          &sl 2            &sl 1      &lt 3 SPACE  &sk LSHIFT
             >;
         };
