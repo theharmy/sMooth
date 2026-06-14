@@ -292,6 +292,13 @@
             timeout-ms = <30>;
             layers = <1 2>;
         };
+
+        combo_stdio {
+            bindings = <&studio_unlock>;
+            key-positions = <8 9 10>;
+            layers = <2>;
+            require-prior-idle-ms = <150>;
+        };
     };
 
     behaviors {
