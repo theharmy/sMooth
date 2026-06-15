@@ -9,26 +9,26 @@
         transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
-            = <&key_physical_attrs 100 100    0  108  (-700)    50   158>
-            , <&key_physical_attrs 100 100  117   42       0     0     0>
-            , <&key_physical_attrs 100 100  217    0       0     0     0>
-            , <&key_physical_attrs 100 100  317   53       0     0     0>
-            , <&key_physical_attrs 100 100   12  207  (-700)    62   257>
-            , <&key_physical_attrs 100 100  117  142       0     0     0>
-            , <&key_physical_attrs 100 100  217  100       0     0     0>
-            , <&key_physical_attrs 100 100  317  153       0     0     0>
-            , <&key_physical_attrs 100 100  328  316     800   378   366>
-            , <&key_physical_attrs 100 100  427  330     800   477   380>
-            , <&key_physical_attrs 100 100  810   53       0     0     0>
-            , <&key_physical_attrs 100 100  910    0       0     0     0>
-            , <&key_physical_attrs 100 100 1010   42       0     0     0>
-            , <&key_physical_attrs 100 100 1127  108     700  1177   158>
-            , <&key_physical_attrs 100 100  810  153       0     0     0>
-            , <&key_physical_attrs 100 100  910  100       0     0     0>
-            , <&key_physical_attrs 100 100 1010  142       0     0     0>
-            , <&key_physical_attrs 100 100 1115  207     700  1165   257>
-            , <&key_physical_attrs 100 100  700  330  (-800)   750   380>
-            , <&key_physical_attrs 100 100  799  316  (-800)   849   366>
+            = <&key_physical_attrs 100 100    0  108  (-700)    50   158>   //  0: left top inner
+            , <&key_physical_attrs 100 100  117   42       0     0     0>   //  1: left top
+            , <&key_physical_attrs 100 100  217    0       0     0     0>   //  2: left top
+            , <&key_physical_attrs 100 100  317   53       0     0     0>   //  3: left top outer
+            , <&key_physical_attrs 100 100  810   53       0     0     0>   //  4: right top inner
+            , <&key_physical_attrs 100 100  910    0       0     0     0>   //  5: right top
+            , <&key_physical_attrs 100 100 1010   42       0     0     0>   //  6: right top
+            , <&key_physical_attrs 100 100 1127  108     700  1177   158>   //  7: right top outer
+            , <&key_physical_attrs 100 100   12  207  (-700)    62   257>   //  8: left bottom inner
+            , <&key_physical_attrs 100 100  117  142       0     0     0>   //  9: left bottom
+            , <&key_physical_attrs 100 100  217  100       0     0     0>   // 10: left bottom
+            , <&key_physical_attrs 100 100  317  153       0     0     0>   // 11: left bottom outer
+            , <&key_physical_attrs 100 100  810  153       0     0     0>   // 12: right bottom inner
+            , <&key_physical_attrs 100 100  910  100       0     0     0>   // 13: right bottom
+            , <&key_physical_attrs 100 100 1010  142       0     0     0>   // 14: right bottom
+            , <&key_physical_attrs 100 100 1115  207     700  1165   257>   // 15: right bottom outer
+            , <&key_physical_attrs 100 100  328  316     800   378   366>   // 16: left thumb inner
+            , <&key_physical_attrs 100 100  427  330     800   477   380>   // 17: left thumb outer
+            , <&key_physical_attrs 100 100  700  330  (-800)   750   380>   // 18: right thumb inner
+            , <&key_physical_attrs 100 100  799  316  (-800)   849   366>   // 19: right thumb outer
             ;
     };
 };
