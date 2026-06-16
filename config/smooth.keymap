@@ -362,8 +362,8 @@
 
         nav {
             bindings = <
-&kp LEFT_CONTROL  &kp DEL   &kp TAB   &kp RET                            &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
-&none             &sk LALT  &sk LGUI  &sk LSHFT                          &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
+&kp LEFT_CONTROL  &kp DEL   &kp TAB   &kp RET                            &kp LEFT  &kp DOWN_ARROW  &kp UP    &kp DOWN
+&none             &sk LALT  &sk LGUI  &sk LSHFT                          &trans    &kp END         &kp HOME  &trans
                                       &trans     &trans      &kp RETURN  &trans
             >;
         };
