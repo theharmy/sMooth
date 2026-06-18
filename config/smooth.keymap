@@ -353,17 +353,17 @@
 
         a1 {
             bindings = <
-&hml LCTRL DE_S  &kp DE_L            &kp DE_N            &kp DE_D                                      &kp DE_Y         &kp DE_O            &kp DE_U            &hmr LCTRL DE_A
-&none            &hml LEFT_ALT DE_R  &hml LEFT_GUI DE_H  &hml LEFT_SHIFT DE_T                          &hmr LSHFT DE_C  &hmr LEFT_GUI DE_E  &hmr LEFT_ALT DE_I  &trans
+&hml LCTRL DE_S  &hml LEFT_ALT DE_L  &hml LEFT_GUI DE_N  &hml LEFT_SHIFT DE_D                          &hmr LEFT_SHIFT DE_Y  &hmr LEFT_GUI DE_O  &hmr LEFT_ALT DE_U  &hmr LCTRL DE_A
+&none            &kp DE_R            &kp DE_H            &kp DE_T                                      &kp DE_C              &kp DE_E            &kp DE_I            &trans
                                                          &sl 2                 &sl 1      &lt 3 SPACE  &sk LSHIFT
             >;
         };
 
         a2 {
             bindings = <
-&kp DE_F  &kp DE_X  &kp DE_B  &kp DE_M                      &kp DE_W  &kp DE_Q  &kp DE_COMMA  &kp DE_Z
-&trans    &kp DE_V  &kp DE_P  &kp DE_K                      &kp DE_G  &kp DE_J  &kp DE_DOT    &trans
-                              &trans    &trans      &trans  &trans
+&kp DE_F  &kp DE_X  &kp DE_B  &kp DE_M                         &kp DE_W  &kp DE_Q  &kp DE_COMMA  &kp DE_Z
+&trans    &kp DE_V  &kp DE_P  &kp DE_K                         &kp DE_G  &kp DE_J  &kp DE_DOT    &trans
+                              &trans    &trans      &kp ENTER  &trans
             >;
 
             label = "a2";
@@ -371,9 +371,9 @@
 
         navnum {
             bindings = <
-&kp LCTRL  &kp HOME            &kp UP_ARROW        &kp END                                      &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_DOT
-&trans     &hml LEFT_ALT DOWN  &hml LEFT_GUI DOWN  &hml LEFT_SHIFT RIGHT                        &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans
-                                                   &to 0                  &sl 1      &kp ENTER  &kp DE_N0
+&kp LCTRL  &hml LEFT_ALT HOME  &hml LEFT_GUI UP_ARROW  &hml LEFT_SHIFT END                     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_DOT
+&trans     &kp LEFT_ARROW      &kp DOWN                &kp RIGHT                               &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans
+                                                       &to 0                &sl 1      &trans  &kp DE_N0
             >;
 
             label = "navnum";
@@ -387,6 +387,14 @@
             >;
 
             label = "sym";
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans
+                        &trans  &trans      &trans  &trans
+            >;
         };
     };
 };
