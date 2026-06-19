@@ -379,8 +379,8 @@
 
         navnum {
             bindings = <
-&kp LCTRL  &hml LEFT_ALT HOME  &hml LEFT_GUI UP_ARROW  &hml LEFT_SHIFT END                     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_DOT
-&trans     &kp LEFT_ARROW      &kp DOWN                &kp RIGHT                               &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans
+&kp LCTRL  &hml LEFT_ALT HOME  &hml LEFT_GUI UP_ARROW  &hml LEFT_SHIFT END                     &hmr LEFT_SHIFT DE_N4  &hmr LEFT_GUI DE_N5  &hmr LEFT_ALT DE_N6  &hmr LEFT_SHIFT DE_DOT
+&trans     &kp LEFT_ARROW      &kp DOWN                &kp RIGHT                               &kp DE_N1              &kp DE_N2            &kp DE_N3            &trans
                                                        &to 0                &sl 1      &trans  &kp DE_N0
             >;
 
