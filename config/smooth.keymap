@@ -176,6 +176,7 @@
             bindings = <&kp BSPC>;
             key-positions = <5 4>;
             timeout-ms = <30>;
+            layers = <0 1 2>;
         };
 
         combo_cbspc {
@@ -233,6 +234,13 @@
             key-positions = <6 14>;
             layers = <2>;
             timeout-ms = <30>;
+        };
+
+        combo_question {
+            bindings = <&kp DE_QMARK>;
+            key-positions = <0 1>;
+            timeout-ms = <30>;
+            layers = <3>;
         };
     };
 
