@@ -369,31 +369,31 @@
             label = "a2";
         };
 
-        navnum {
+        symnum {
             bindings = <
-&kp LCTRL  &hml LEFT_ALT HOME  &hml LEFT_GUI UP_ARROW  &hml LEFT_SHIFT END                     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_DOT
-&trans     &kp LEFT_ARROW      &kp DOWN                &kp RIGHT                               &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans
-                                                       &to 0                &sl 1      &trans  &kp DE_N0
+&hml LCTRL DE_PERCENT  &hml LEFT_ALT DE_EQUAL  &hml LEFT_GUI DE_PLUS  &hml LEFT_SHIFT DE_ASTERISK                     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_DOT
+&trans                 &kp DE_HASH             &kp DE_DOLLAR          &kp DE_MINUS                                    &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans
+                                                                      &to 0                        &sl 1      &trans  &kp DE_N0
             >;
 
-            label = "navnum";
+            label = "symnum";
         };
 
         sym {
             bindings = <
-&kp DE_EXCL  &kp DE_GRAVE  &kp DE_DQT   &kp DE_UNDER                       &kp DE_BSLH       &kp DE_PIPE      &kp DE_EQUAL    &kp DE_CARET
-&none        &kp DE_AT     &kp DE_HASH  &kp DE_DOLLAR                      &kp DE_AMPERSAND  &kp DE_ASTERISK  &kp DE_PERCENT  &none
-                                        &trans         &trans      &trans  &trans
+&kp DE_AT  &kp DE_AMPS  &kp DE_QUESTION  &kp DE_EXCL                       &kp DE_SQT        &kp DE_DQT    &kp DE_SEMICOLON  &kp DE_CARET
+&none      &kp DE_HASH  &kp DE_DOLLAR    &kp DE_MINUS                      &kp DE_AMPERSAND  &kp DE_TILDE  &kp COLON         &none
+                                         &trans        &trans      &trans  &trans
             >;
 
             label = "sym";
         };
 
-        layer_4 {
+        nav {
             bindings = <
-&trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans
-                        &trans  &trans      &trans  &trans
+&sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT                      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT
+&trans     &sk DEL   &sk TAB   &sk RET                        &trans    &kp HOME  &kp END  &trans
+                               &trans     &trans      &trans  &trans
             >;
         };
     };
