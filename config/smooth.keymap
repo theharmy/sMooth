@@ -162,26 +162,26 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <3 2>;
+            key-positions = <2 1>;
             timeout-ms = <30>;
         };
 
         combo_rtn {
             bindings = <&kp RETURN>;
-            key-positions = <1 3>;
+            key-positions = <3 2>;
             timeout-ms = <30>;
         };
 
         combo_bspc {
             bindings = <&kp BSPC>;
-            key-positions = <5 4>;
+            key-positions = <6 5>;
             timeout-ms = <30>;
             layers = <0 1 2>;
         };
 
         combo_cbspc {
             bindings = <&kp LC(BSPC)>;
-            key-positions = <5 6>;
+            key-positions = <5 4>;
             timeout-ms = <30>;
         };
 
@@ -369,9 +369,9 @@
 
         a2 {
             bindings = <
-&kp DE_F  &kp DE_X  &kp DE_B  &kp DE_M                         &kp DE_W  &kp DE_Q  &kp DE_COMMA  &kp DE_Z
-&trans    &kp DE_V  &kp DE_P  &kp DE_K                         &kp DE_G  &kp DE_J  &kp DE_DOT    &trans
-                              &trans    &trans      &kp ENTER  &trans
+&kp DE_F  &kp DE_X  &kp DE_B  &kp DE_M                        &kp DE_W  &kp DE_Q  &kp DE_COMMA  &kp DE_Z
+&trans    &kp DE_V  &kp DE_P  &kp DE_K                        &kp DE_G  &kp DE_J  &kp DE_DOT    &trans
+                              &trans    &sl 0      &kp ENTER  &trans
             >;
 
             label = "a2";
