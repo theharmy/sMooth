@@ -371,7 +371,7 @@
             bindings = <
 &kp DE_F  &kp DE_X  &kp DE_B  &kp DE_M                     &kp DE_W  &kp DE_Q  &kp DE_COMMA  &kp DE_Z
 &trans    &kp DE_V  &kp DE_P  &kp DE_K                     &kp DE_G  &kp DE_J  &kp DE_DOT    &trans
-                              &trans    &trans      &to 0  &trans
+                              &trans    &to 0      &trans  &trans
             >;
 
             label = "a2";
