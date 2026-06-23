@@ -369,9 +369,9 @@
 
         a2 {
             bindings = <
-&kp DE_F  &kp DE_X  &kp DE_B  &kp DE_M                         &kp DE_W  &kp DE_Q  &kp DE_COMMA  &kp DE_Z
-&trans    &kp DE_V  &kp DE_P  &kp DE_K                         &kp DE_G  &kp DE_J  &kp DE_DOT    &trans
-                              &trans    &trans      &kp ENTER  &trans
+&kp DE_F  &kp DE_X  &kp DE_B  &kp DE_M                     &kp DE_W  &kp DE_Q  &kp DE_COMMA  &kp DE_Z
+&trans    &kp DE_V  &kp DE_P  &kp DE_K                     &kp DE_G  &kp DE_J  &kp DE_DOT    &trans
+                              &trans    &trans      &to 0  &trans
             >;
 
             label = "a2";
@@ -379,9 +379,9 @@
 
         navnum {
             bindings = <
-&kp LCTRL  &hml LEFT_ALT HOME  &hml LEFT_GUI UP_ARROW  &hml LEFT_SHIFT END                     &hmr LEFT_SHIFT DE_N4  &hmr LEFT_GUI DE_N5  &hmr LEFT_ALT DE_N6  &hmr LEFT_SHIFT DE_DOT
-&trans     &kp LEFT_ARROW      &kp DOWN                &kp RIGHT                               &kp DE_N1              &kp DE_N2            &kp DE_N3            &trans
-                                                       &to 0                &sl 1      &trans  &kp DE_N0
+&kp LCTRL  &hml LEFT_ALT HOME  &hml LEFT_GUI UP_ARROW  &hml LEFT_SHIFT END                        &hmr LEFT_SHIFT DE_N4  &hmr LEFT_GUI DE_N5  &hmr LEFT_ALT DE_N6  &hmr LEFT_SHIFT DE_DOT
+&trans     &kp LEFT_ARROW      &kp DOWN                &kp RIGHT                                  &kp DE_N1              &kp DE_N2            &kp DE_N3            &trans
+                                                       &to 0                &sl 1      &kp ENTER  &kp DE_N0
             >;
 
             label = "navnum";
