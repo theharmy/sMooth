@@ -194,11 +194,13 @@
         combo_sk_shift_l {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <9 10>;
+            timeout-ms = <40>;
         };
 
         combo_sk_shift_r {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <13 14>;
+            timeout-ms = <40>;
         };
 
         combo_stdio {
@@ -241,6 +243,18 @@
             key-positions = <0 1>;
             timeout-ms = <30>;
             layers = <3>;
+        };
+
+        combo_rpt {
+            bindings = <&key_repeat>;
+            key-positions = <10 11>;
+            timeout-ms = <40>;
+        };
+
+        xombo_repeat_r {
+            bindings = <&key_repeat>;
+            key-positions = <12 13>;
+            timeout-ms = <40>;
         };
     };
 
@@ -361,10 +375,9 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             require-prior-idle-ms = <200>;
-            hold-trigger-on-release;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
     };
 
