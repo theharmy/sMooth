@@ -218,21 +218,21 @@
         combo_7 {
             bindings = <&kp DE_N7>;
             key-positions = <4 12>;
-            layers = <2>;
+            layers = <4>;
             timeout-ms = <30>;
         };
 
         combo_8 {
             bindings = <&kp DE_N8>;
             key-positions = <5 13>;
-            layers = <2>;
+            layers = <4>;
             timeout-ms = <30>;
         };
 
         combo_9 {
             bindings = <&kp DE_N9>;
             key-positions = <6 14>;
-            layers = <2>;
+            layers = <4>;
             timeout-ms = <30>;
         };
 
@@ -389,14 +389,14 @@
             label = "a2";
         };
 
-        navnum {
+        nav {
             bindings = <
 &sk LCTRL  &sk LALT  &sk LGUI   &sk LSHFT                        &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT
 &trans     &trans    &kp PG_UP  &trans                           &kp HOME   &kp PG_DN  &kp END  &trans
                                 &to 0      &sl 1      &kp ENTER  &kp DE_N0
             >;
 
-            label = "navnum";
+            label = "nav";
         };
 
         sym {
