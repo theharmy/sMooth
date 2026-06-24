@@ -354,6 +354,18 @@
             hold-trigger-key-positions = <0 3 8 9 10 11 16 17 2 1>;
             flavor = "balanced";
         };
+
+        lt_r2: lt_r2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_R2";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <200>;
+            hold-trigger-on-release;
+            tapping-term-ms = <100>;
+        };
     };
 
     keymap {
@@ -362,8 +374,8 @@
         a1 {
             bindings = <
 &hml LCTRL DE_S  &hml LEFT_ALT DE_L  &hml LEFT_GUI DE_N  &hml LEFT_SHIFT DE_D                                   &hmr LEFT_SHIFT DE_Y  &hmr LEFT_GUI DE_O  &hmr LEFT_ALT DE_U  &hmr LCTRL DE_A
-&none            &kp DE_R            &kp DE_H            &kp DE_T                                               &kp DE_C              &kp DE_E            &kp DE_I            &trans
-                                                         &sl 2                 &sl 1      &mt LEFT_SHIFT SPACE  &sl 3
+&none            &kp DE_R            &kp DE_H            &lt_r2 3 DE_T                                          &lt_r2 3 DE_C         &kp DE_E            &kp DE_I            &trans
+                                                         &sl 2                 &sl 1      &mt LEFT_SHIFT SPACE  &sl 4
             >;
         };
 
@@ -379,9 +391,9 @@
 
         navnum {
             bindings = <
-&kp LCTRL  &hml LEFT_ALT HOME  &hml LEFT_GUI UP_ARROW  &hml LEFT_SHIFT END                        &hmr LEFT_SHIFT DE_N4  &hmr LEFT_GUI DE_N5  &hmr LEFT_ALT DE_N6  &hmr LEFT_SHIFT DE_DOT
-&trans     &kp LEFT_ARROW      &kp DOWN                &kp RIGHT                                  &kp DE_N1              &kp DE_N2            &kp DE_N3            &trans
-                                                       &to 0                &sl 1      &kp ENTER  &kp DE_N0
+&sk LCTRL  &sk LALT  &sk LGUI   &sk LSHFT                        &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT
+&trans     &trans    &kp PG_UP  &trans                           &kp HOME   &kp PG_DN  &kp END  &trans
+                                &to 0      &sl 1      &kp ENTER  &kp DE_N0
             >;
 
             label = "navnum";
@@ -391,17 +403,17 @@
             bindings = <
 &kp DE_EXCL  &kp DE_GRAVE  &kp DE_DQT   &kp DE_UNDER                       &kp DE_BSLH       &kp DE_PIPE      &kp DE_EQUAL    &kp DE_CARET
 &none        &kp DE_AT     &kp DE_HASH  &kp DE_DOLLAR                      &kp DE_AMPERSAND  &kp DE_ASTERISK  &kp DE_PERCENT  &none
-                                        &trans         &trans      &trans  &trans
+                                        &kp DE_TILDE   &trans      &trans  &trans
             >;
 
             label = "sym";
         };
 
-        layer_4 {
+        num {
             bindings = <
-&trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans
-                        &trans  &trans      &trans  &trans
+&hml LCTRL DE_PLUS  &hml LEFT_ALT DE_MINUS  &hml LEFT_GUI DE_ASTRK  &kp DE_EQUAL                         &kp DE_N4  &kp DE_N5  &kp DE_N6  &trans
+&trans              &kp DE_PERCENT          &kp DE_PIPE             &kp DE_FSLH                          &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_DOT
+                                                                    &trans        &trans      &kp DE_N0  &trans
             >;
         };
     };
