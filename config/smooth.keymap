@@ -247,13 +247,13 @@
 
         combo_rpt {
             bindings = <&key_repeat>;
-            key-positions = <10 11>;
+            key-positions = <1 3>;
             timeout-ms = <40>;
         };
 
         xombo_repeat_r {
             bindings = <&key_repeat>;
-            key-positions = <12 13>;
+            key-positions = <4 6>;
             timeout-ms = <40>;
         };
     };
@@ -404,9 +404,9 @@
 
         nav {
             bindings = <
-&sk LCTRL  &sk LALT  &sk LGUI   &sk LSHFT                        &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT
-&trans     &trans    &kp PG_UP  &trans                           &kp HOME   &kp PG_DN  &kp END  &trans
-                                &to 0      &sl 1      &kp ENTER  &kp DE_N0
+&sk LCTRL  &sk LALT  &sk LGUI   &sk LSHFT                        &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT
+&trans     &trans    &kp PG_UP  &trans                           &kp HOME  &kp PG_DN  &kp END  &trans
+                                &to 0      &sl 1      &kp ENTER  &sl 4
             >;
 
             label = "nav";
