@@ -394,9 +394,9 @@
 
         a2 {
             bindings = <
-&kp DE_F  &kp DE_X  &kp DE_B  &kp DE_M                     &kp DE_W  &kp DE_Q  &kp DE_COMMA  &kp DE_Z
-&trans    &kp DE_V  &kp DE_P  &kp DE_K                     &kp DE_G  &kp DE_J  &kp DE_DOT    &trans
-                              &trans    &to 0      &trans  &trans
+&hml LEFT_CONTROL DE_F  &hml LEFT_ALT DE_X  &hml LEFT_GUI DE_B  &hml LEFT_SHIFT DE_M                     &hmr LEFT_SHIFT DE_W  &hmr LEFT_GUI DE_Q  &hmr LEFT_ALT DE_COMMA  &hmr LEFT_CONTROL DE_Z
+&trans                  &kp DE_V            &kp DE_P            &kp DE_K                                 &kp DE_G              &kp DE_J            &kp DE_DOT              &trans
+                                                                &trans                &to 0      &trans  &trans
             >;
 
             label = "a2";
