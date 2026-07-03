@@ -176,11 +176,13 @@
         sk_shift_l {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <11 3>;
+            layers = <0 1 2>;
         };
 
         sk_shift_r {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <4 12>;
+            layers = <0 2 1>;
         };
     };
 
