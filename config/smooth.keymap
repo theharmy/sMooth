@@ -97,13 +97,13 @@
 
         combo_cbspc {
             bindings = <&kp LC(BSPC)>;
-            key-positions = <4 5>;
+            key-positions = <4 6>;
             timeout-ms = <30>;
         };
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <4 6>;
+            key-positions = <4 6 5>;
             timeout-ms = <30>;
         };
 
@@ -163,29 +163,30 @@
 
         sk_shift_l {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <10 9>;
+            key-positions = <3 2>;
             layers = <0 1>;
             timeout-ms = <40>;
         };
 
         sk_shift_r {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <14 13>;
+            key-positions = <4 5>;
             layers = <0 1>;
             timeout-ms = <40>;
         };
 
         combo_num_l {
             bindings = <&to 4>;
-            key-positions = <10 11>;
+            key-positions = <10 11 9>;
             timeout-ms = <30>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2>;
         };
 
         combo_num_r {
             bindings = <&to 4>;
-            key-positions = <12 13>;
+            key-positions = <12 13 14>;
             timeout-ms = <30>;
+            layers = <0 1 3>;
         };
     };
 
