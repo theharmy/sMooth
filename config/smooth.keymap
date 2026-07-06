@@ -97,13 +97,13 @@
 
         combo_cbspc {
             bindings = <&kp LC(BSPC)>;
-            key-positions = <4 6>;
+            key-positions = <4 6 5>;
             timeout-ms = <30>;
         };
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <4 6 5>;
+            key-positions = <4 6>;
             timeout-ms = <30>;
         };
 
@@ -117,7 +117,7 @@
 
         combo_minus {
             bindings = <&kp DE_MINUS>;
-            key-positions = <12 13>;
+            key-positions = <12 14>;
             timeout-ms = <30>;
         };
 
@@ -151,13 +151,13 @@
 
         combo_rpt {
             bindings = <&key_repeat>;
-            key-positions = <3 11>;
+            key-positions = <11 10>;
             timeout-ms = <40>;
         };
 
         xombo_repeat_r {
             bindings = <&key_repeat>;
-            key-positions = <4 12>;
+            key-positions = <12 13>;
             timeout-ms = <40>;
         };
 
