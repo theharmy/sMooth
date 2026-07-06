@@ -6,6 +6,90 @@
     combos {
         compatible = "zmk,combos";
 
+        combo_rl {
+            bindings = <&macro_rl>;
+            key-positions = <1 9>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        combo_hn {
+            bindings = <&macro_hn>;
+            key-positions = <2 10>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        combo_dt {
+            bindings = <&macro_dt>;
+            key-positions = <3 11>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        combo_cy {
+            bindings = <&macro_cy>;
+            key-positions = <4 12>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        combo_eo {
+            bindings = <&macro_eo>;
+            key-positions = <5 13>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        combo_ui {
+            bindings = <&macro_ui>;
+            key-positions = <6 14>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        combo_lr {
+            bindings = <&macro_lr>;
+            key-positions = <1 9>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        combo_nb {
+            bindings = <&macro_nb>;
+            key-positions = <2 10>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        combo_mt {
+            bindings = <&macro_mt>;
+            key-positions = <3 11>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        combo_gy {
+            bindings = <&macro_gy>;
+            key-positions = <4 12>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        combo_oe {
+            bindings = <&macro_oe>;
+            key-positions = <5 13>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
+        combo_iu {
+            bindings = <&macro_iu>;
+            key-positions = <6 14>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
         combo_lbrc {
             bindings = <&kp DE_LBRC>;
             key-positions = <1 9>;
