@@ -1,5 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include "keys_de.h"
 
 / {
     combos {
@@ -90,70 +91,70 @@
         };
 
         combo_lbrc {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&kp DE_LBRC>;
             key-positions = <1 9>;
             timeout-ms = <30>;
             layers = <3>;
         };
 
         combo_lbrk {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp DE_LEFT_BRACKET>;
             key-positions = <2 10>;
             timeout-ms = <30>;
             layers = <3>;
         };
 
         combo_lpar {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp DE_LPAR>;
             key-positions = <3 11>;
             timeout-ms = <30>;
             layers = <3>;
         };
 
         combo_rpar {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp DE_RPAR>;
             key-positions = <4 12>;
             timeout-ms = <30>;
             layers = <3>;
         };
 
         combo_rbrk {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp DE_RIGHT_BRACKET>;
             key-positions = <5 13>;
             timeout-ms = <30>;
             layers = <3>;
         };
 
         combo_rbrc {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&kp DE_RBRC>;
             key-positions = <6 14>;
             timeout-ms = <30>;
             layers = <3>;
         };
 
         combo_lt {
-            bindings = <&kp LESS_THAN>;
+            bindings = <&kp DE_LESS_THAN>;
             key-positions = <2 11>;
             timeout-ms = <30>;
             layers = <3 2>;
         };
 
         combo_gt {
-            bindings = <&kp GREATER_THAN>;
+            bindings = <&kp DE_GT>;
             key-positions = <5 12>;
             timeout-ms = <30>;
             layers = <3 2>;
         };
 
         combo_fslsh {
-            bindings = <&kp SLASH>;
+            bindings = <&kp DE_FSLH>;
             key-positions = <2 9>;
             timeout-ms = <30>;
             layers = <3 0 1 2>;
         };
 
         combo_bslsh {
-            bindings = <&kp BACKSLASH>;
+            bindings = <&kp DE_BACKSLASH>;
             key-positions = <5 14>;
             timeout-ms = <30>;
             layers = <3 0 1 2>;
@@ -199,34 +200,34 @@
         };
 
         combo_minus {
-            bindings = <&mm_minus>;
+            bindings = <&kp DE_MINUS>;
             key-positions = <12 14>;
             timeout-ms = <30>;
         };
 
         combo_7 {
-            bindings = <&kp N7>;
+            bindings = <&kp DE_N7>;
             key-positions = <4 12>;
             layers = <4>;
             timeout-ms = <30>;
         };
 
         combo_8 {
-            bindings = <&kp N8>;
+            bindings = <&kp DE_N8>;
             key-positions = <5 13>;
             layers = <4>;
             timeout-ms = <30>;
         };
 
         combo_9 {
-            bindings = <&kp N9>;
+            bindings = <&kp DE_N9>;
             key-positions = <6 14>;
             layers = <4>;
             timeout-ms = <30>;
         };
 
         combo_question {
-            bindings = <&kp QUESTION>;
+            bindings = <&kp DE_QMARK>;
             key-positions = <0 1>;
             timeout-ms = <30>;
             layers = <3>;
@@ -277,97 +278,89 @@
         macro_rl: macro_rl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp R &kp L>;
+            bindings = <&kp DE_R &kp DE_L>;
             label = "MACRO_RL";
         };
 
         macro_hn: hn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp H &kp N>;
+            bindings = <&kp DE_H &kp DE_N>;
             label = "HN";
         };
 
         macro_dt: dt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp D &kp T>;
+            bindings = <&kp DE_D &kp DE_T>;
             label = "DT";
         };
 
         macro_cy: cy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C &kp Y>;
+            bindings = <&kp DE_C &kp DE_Y>;
             label = "CY";
         };
 
         macro_eo: eo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp E &kp O>;
+            bindings = <&kp DE_E &kp DE_O>;
             label = "EO";
         };
 
         macro_ui: ui {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp U &kp I>;
+            bindings = <&kp DE_U &kp DE_I>;
             label = "UI";
         };
 
         macro_lr: lr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp R>;
+            bindings = <&kp DE_L &kp DE_R>;
             label = "LR";
         };
 
         macro_nb: nb {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N &kp B>;
+            bindings = <&kp DE_N &kp DE_B>;
             label = "NB";
         };
 
         macro_mt: mt_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp M &kp T>;
+            bindings = <&kp DE_M &kp DE_T>;
             label = "MT_MACRO";
         };
 
         macro_gy: gy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp G &kp Y>;
+            bindings = <&kp DE_G &kp DE_Y>;
             label = "GY";
         };
 
         macro_oe: oe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp O &kp E>;
+            bindings = <&kp DE_O &kp DE_E>;
             label = "OE";
         };
 
         macro_iu: iu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp U>;
+            bindings = <&kp DE_I &kp DE_U>;
             label = "IU";
         };
     };
 
     behaviors {
-        mm_minus: mm_minus {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MM_MINUS";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp UNDERSCORE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
@@ -409,17 +402,17 @@
 
         a1 {
             bindings = <
-&hml LCTRL S  &hml LEFT_ALT L  &hml LEFT_GUI N  &hml LEFT_SHIFT D                        &hmr LEFT_SHIFT Y  &hmr LEFT_GUI O  &hmr LEFT_ALT U  &hmr LCTRL A
-&trans        &kp R            &kp H            &lt_r2 4 T                               &lt_r2 4 C         &kp E            &kp I            &trans
+&hml LCTRL DE_S  &hml LEFT_ALT DE_L  &hml LEFT_GUI DE_N  &hml LEFT_SHIFT DE_D                        &hmr LEFT_SHIFT DE_Y  &hmr LEFT_GUI DE_O  &hmr LEFT_ALT DE_U  &hmr LCTRL DE_A
+&trans           &kp DE_R            &kp DE_H            &lt_r2 4 DE_T                               &lt_r2 4 DE_C         &kp DE_E            &kp DE_I            &trans
                                                          &sl 2                 &sl 1      &kp SPACE  &sl 3
             >;
         };
 
         a2 {
             bindings = <
-&hml LEFT_CONTROL F  &hml LEFT_ALT X  &hml LEFT_GUI B  &hml LEFT_SHIFT M                     &hmr LEFT_SHIFT W  &hmr LEFT_GUI Q  &hmr LEFT_ALT COMMA  &hmr LEFT_CONTROL Z
-&trans                &kp V            &kp P            &kp K                                 &kp G              &kp J            &kp DOT              &trans
-                                                               &trans                &to 0      &trans  &trans
+&hml LEFT_CONTROL DE_F  &hml LEFT_ALT DE_X  &hml LEFT_GUI DE_B  &hml LEFT_SHIFT DE_M                     &hmr LEFT_SHIFT DE_W  &hmr LEFT_GUI DE_Q  &hmr LEFT_ALT DE_COMMA  &hmr LEFT_CONTROL DE_Z
+&trans                  &kp DE_V            &kp DE_P            &kp DE_K                                 &kp DE_G              &kp DE_J            &kp DE_DOT              &trans
+                                                                &trans                &to 0      &trans  &trans
             >;
 
             label = "a2";
@@ -437,9 +430,9 @@
 
         sym {
             bindings = <
-&kp EXCLAMATION  &kp GRAVE  &kp SINGLE_QUOTE   &kp DOUBLE_QUOTES                        &kp BACKSLASH       &kp PIPE      &kp EQUAL    &kp CARET
-&none            &kp AT     &kp HASH  &kp DOLLAR                     &kp AMPERSAND  &kp ASTERISK  &kp PERCENT  &none
-                                        &kp TILDE   &to 0      &trans  &to 3
+&kp DE_EXCL  &kp DE_GRAVE  &kp DE_SQT   &kp DE_DQT                        &kp DE_BSLH       &kp DE_PIPE      &kp DE_EQUAL    &kp DE_CARET
+&none        &kp DE_AT     &kp DE_HASH  &kp DE_DOLLAR                     &kp DE_AMPERSAND  &kp DE_ASTERISK  &kp DE_PERCENT  &none
+                                        &kp DE_TILDE   &to 0      &trans  &to 3
             >;
 
             label = "sym";
@@ -447,8 +440,8 @@
 
         num {
             bindings = <
-&hml LCTRL PLUS  &hml LEFT_ALT MINUS  &hml LEFT_GUI ASTERISK  &kp EQUAL                     &kp N4  &kp N5  &kp N6  &kp N0
-&trans            &kp PERCENT          &kp PIPE             &kp SLASH                      &kp N1  &kp N2  &kp N3  &trans
+&hml LCTRL DE_PLUS  &hml LEFT_ALT DE_MINUS  &hml LEFT_GUI DE_ASTRK  &kp DE_EQUAL                     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_N0
+&trans              &kp DE_PERCENT          &kp DE_PIPE             &kp DE_FSLH                      &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans
                                                                     &trans        &to 0      &trans  &trans
             >;
         };
