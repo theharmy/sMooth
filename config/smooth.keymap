@@ -258,20 +258,6 @@
             layers = <0 1>;
             timeout-ms = <40>;
         };
-
-        combo_num_l {
-            bindings = <&to 4>;
-            key-positions = <10 11 9>;
-            timeout-ms = <30>;
-            layers = <0 1 2>;
-        };
-
-        combo_num_r {
-            bindings = <&to 4>;
-            key-positions = <12 13 14>;
-            timeout-ms = <30>;
-            layers = <0 1 3>;
-        };
     };
 
     macros {
@@ -402,9 +388,9 @@
 
         a1 {
             bindings = <
-&hml LCTRL DE_S  &hml LEFT_ALT DE_L  &hml LEFT_GUI DE_N  &hml LEFT_SHIFT DE_D                        &hmr LEFT_SHIFT DE_Y  &hmr LEFT_GUI DE_O  &hmr LEFT_ALT DE_U  &hmr LCTRL DE_A
-&trans           &kp DE_R            &kp DE_H            &lt_r2 4 DE_T                               &lt_r2 4 DE_C         &kp DE_E            &kp DE_I            &trans
-                                                         &sl 2                 &sl 1      &kp SPACE  &sl 3
+&hml LCTRL DE_S  &hml LEFT_ALT DE_L  &hml LEFT_GUI DE_N  &hml LEFT_SHIFT DE_D                          &hmr LEFT_SHIFT DE_Y  &hmr LEFT_GUI DE_O  &hmr LEFT_ALT DE_U  &hmr LCTRL DE_A
+&trans           &kp DE_R            &kp DE_H            &lt_r2 4 DE_T                                 &lt_r2 4 DE_C         &kp DE_E            &kp DE_I            &trans
+                                                         &sl 4                 &sl 1      &lt 2 SPACE  &sl 3
             >;
         };
 
@@ -422,7 +408,7 @@
             bindings = <
 &sk LCTRL  &sk LALT  &sk LGUI   &sk LSHFT                     &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT
 &trans     &trans    &kp PG_UP  &trans                        &kp HOME  &kp PG_DN  &kp END  &trans
-                                &to 2      &to 0      &trans  &trans
+                                &to 4      &to 0      &trans  &to 3
             >;
 
             label = "nav";
@@ -432,7 +418,7 @@
             bindings = <
 &kp DE_EXCL  &kp DE_GRAVE  &kp DE_SQT   &kp DE_DQT                        &kp DE_BSLH       &kp DE_PIPE      &kp DE_EQUAL    &kp DE_CARET
 &none        &kp DE_AT     &kp DE_HASH  &kp DE_DOLLAR                     &kp DE_AMPERSAND  &kp DE_ASTERISK  &kp DE_PERCENT  &none
-                                        &kp DE_TILDE   &to 0      &trans  &to 3
+                                        &kp DE_TILDE   &to 0      &trans  &trans
             >;
 
             label = "sym";
