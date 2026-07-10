@@ -168,7 +168,7 @@
 
         combo_rtn {
             bindings = <&kp RETURN>;
-            key-positions = <3 1>;
+            key-positions = <3 2>;
             timeout-ms = <30>;
         };
 
@@ -181,13 +181,13 @@
 
         combo_cbspc {
             bindings = <&kp LC(BSPC)>;
-            key-positions = <4 6 5>;
+            key-positions = <4 5>;
             timeout-ms = <30>;
         };
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <4 6>;
+            key-positions = <4 6 5>;
             timeout-ms = <30>;
         };
 
