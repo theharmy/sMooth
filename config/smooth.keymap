@@ -244,20 +244,6 @@
             key-positions = <12 13>;
             timeout-ms = <40>;
         };
-
-        sk_shift_l {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <3 2>;
-            layers = <0 1>;
-            timeout-ms = <40>;
-        };
-
-        sk_shift_r {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <4 5>;
-            layers = <0 1>;
-            timeout-ms = <40>;
-        };
     };
 
     macros {
@@ -388,9 +374,9 @@
 
         a1 {
             bindings = <
-&hml LCTRL DE_S  &hml LEFT_ALT DE_L  &hml LEFT_GUI DE_N  &hml LEFT_SHIFT DE_D                          &hmr LEFT_SHIFT DE_Y  &hmr LEFT_GUI DE_O  &hmr LEFT_ALT DE_U  &hmr LCTRL DE_A
-&trans           &kp DE_R            &kp DE_H            &lt_r2 4 DE_T                                 &lt_r2 4 DE_C         &kp DE_E            &kp DE_I            &trans
-                                                         &sl 4                 &sl 1      &lt 2 SPACE  &sl 3
+&hml LCTRL DE_S  &hml LEFT_ALT DE_L  &hml LEFT_GUI DE_N  &hml LEFT_SHIFT DE_D                                   &hmr LEFT_SHIFT DE_Y  &hmr LEFT_GUI DE_O  &hmr LEFT_ALT DE_U  &hmr LCTRL DE_A
+&trans           &kp DE_R            &kp DE_H            &lt_r2 4 DE_T                                          &lt_r2 4 DE_C         &kp DE_E            &kp DE_I            &trans
+                                                         &sl 2                 &sl 1      &mt LEFT_SHIFT SPACE  &sl 3
             >;
         };
 
