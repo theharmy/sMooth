@@ -369,22 +369,22 @@
         };
     };
 
-    keymap {
+keymap {
         compatible = "zmk,keymap";
 
         a1 {
             bindings = <
-&hml LCTRL DE_S  &hml LEFT_ALT DE_L  &hml LEFT_GUI DE_N  &hml LEFT_SHIFT DE_D                                   &hmr LEFT_SHIFT DE_Y  &hmr LEFT_GUI DE_O  &hmr LEFT_ALT DE_U  &hmr LCTRL DE_A
-&trans           &kp DE_R            &kp DE_H            &lt_r2 4 DE_T                                          &lt_r2 4 DE_C         &kp DE_E            &kp DE_I            &trans
-                                                         &sl 2                 &sl 1      &mt LEFT_SHIFT SPACE  &sl 3
+&hml LCTRL DE_S         &hml LEFT_ALT DE_L  &hml LEFT_GUI DE_N  &hml LEFT_SHIFT DE_D  &hmr LEFT_SHIFT DE_Y  &hmr LEFT_GUI DE_O  &hmr LEFT_ALT DE_U  &hmr LCTRL DE_A
+&trans                  &lt_r4 4 DE_R       &lt_r4 3 DE_H       &lt_r4 5 DE_T         &lt_r4 5 DE_C         &lt_r4 3 DE_E       &lt_r4 4 DE_I       &trans
+                                                                &sl 2                 &sl 1                 &mt LEFT_SHIFT SPACE  &sl 5
             >;
         };
 
         a2 {
             bindings = <
-&hml LEFT_CONTROL DE_F  &hml LEFT_ALT DE_X  &hml LEFT_GUI DE_B  &hml LEFT_SHIFT DE_M                     &hmr LEFT_SHIFT DE_W  &hmr LEFT_GUI DE_Q  &hmr LEFT_ALT DE_COMMA  &hmr LEFT_CONTROL DE_Z
-&trans                  &kp DE_V            &kp DE_P            &kp DE_K                                 &kp DE_G              &kp DE_J            &kp DE_DOT              &trans
-                                                                &trans                &to 0      &trans  &trans
+&hml LEFT_CONTROL DE_F  &hml LEFT_ALT DE_X  &hml LEFT_GUI DE_B  &hml LEFT_SHIFT DE_M  &hmr LEFT_SHIFT DE_W  &hmr LEFT_GUI DE_Q  &hmr LEFT_ALT DE_COMMA  &hmr LEFT_CONTROL DE_Z
+&trans                  &lt_r4 4 DE_V       &lt_r4 3 DE_P       &lt_r4 5 DE_K         &lt_r4 5 DE_G         &lt_r4 3 DE_J       &lt_r4 4 DE_DOT           &trans
+                                                                &trans                &to 0                 &trans              &trans
             >;
 
             label = "a2";
@@ -392,9 +392,9 @@
 
         nav {
             bindings = <
-&sk LCTRL  &sk LALT  &sk LGUI   &sk LSHFT                     &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT
-&trans     &trans    &kp PG_UP  &trans                        &kp HOME  &kp PG_DN  &kp END  &trans
-                                &to 4      &to 0      &trans  &to 3
+&sk LCTRL               &sk LALT            &sk LGUI            &sk LSHFT             &hmr LEFT_SHIFT DOWN  &hmr LEFT_GUI UP    &hmr LEFT_ALT RIGHT     &hmr LCTRL LEFT
+&trans                  &trans              &lt_r4 3 PG_UP      &trans                &lt_r4 5 HOME         &lt_r4 3 PG_DN      &lt_r4 4 END             &trans
+                                                                &trans                &to 0                 &trans              &trans
             >;
 
             label = "nav";
@@ -402,19 +402,28 @@
 
         sym {
             bindings = <
-&kp DE_EXCL  &kp DE_GRAVE  &kp DE_SQT   &kp DE_DQT                        &kp DE_BSLH       &kp DE_PIPE      &kp DE_EQUAL    &kp DE_CARET
-&none        &kp DE_AT     &kp DE_HASH  &kp DE_DOLLAR                     &kp DE_AMPERSAND  &kp DE_ASTERISK  &kp DE_PERCENT  &none
-                                        &kp DE_TILDE   &to 0      &trans  &trans
+&hml LCTRL DE_GRAVE     &hml LEFT_ALT DE_EURO  &hml LEFT_GUI DE_HASH  &hml LEFT_SHIFT DE_DOLLAR  &hmr LEFT_SHIFT DE_LT      &hmr LEFT_GUI DE_GT       &hmr LEFT_ALT DE_CARET  &hmr LCTRL DE_FSLH
+&trans                  &lt_r4 4 DE_TILDE      &lt_r4 3 DE_MINUS      &lt_r4 5 BSLH              &lt_r4 5 DE_LEFT_BRACKET   &lt_r4 3 DE_RIGHT_BRACKET &lt_r4 4 DE_PIPE        &trans
+                                                                      &trans                     &to 0                      &trans                    &trans
             >;
 
             label = "sym";
         };
 
+        sym2 {
+            label = "Sym2";
+            bindings = <
+&hml LCTRL DE_ASTRK     &hml LEFT_ALT DE_AT    &hml LEFT_GUI DE_SQT   &hml LEFT_SHIFT DE_DQT     &hmr LEFT_SHIFT DE_LPAR    &hmr LEFT_GUI DE_RPAR     &hmr LEFT_ALT DE_COLON  &hmr LCTRL DE_AMPERSAND
+&trans                  &lt_r4 4 DE_TILDE      &lt_r4 3 DE_EXCL       &lt_r4 5 DE_QUESTION       &lt_r4 5 DE_LEFT_BRACE     &lt_r4 3 DE_RIGHT_BRACE   &lt_r4 4 DE_SEMICOLON   &trans
+                                                                      &trans                     &to 0                      &trans                    &trans
+            >;
+        };
+
         num {
             bindings = <
-&hml LCTRL DE_PLUS  &hml LEFT_ALT DE_MINUS  &hml LEFT_GUI DE_ASTRK  &kp DE_EQUAL                     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_N0
-&trans              &kp DE_PERCENT          &kp DE_PIPE             &kp DE_FSLH                      &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans
-                                                                    &trans        &to 0      &trans  &trans
+&hml LCTRL DE_PLUS      &hml LEFT_ALT DE_MINUS  &hml LEFT_GUI DE_ASTRK  &hml LEFT_SHIFT DE_EQUAL  &hmr LEFT_SHIFT DE_N5  &hmr LEFT_GUI DE_N6  &hmr LEFT_ALT DE_N0  &hmr LCTRL DE_N4
+&trans                  &lt_r4 4 DE_PERCENT     &lt_r4 3 DE_PIPE        &lt_r4 5 DE_FSLH          &lt_r4 5 DE_N1         &lt_r4 3 DE_N2       &lt_r4 4 DE_N3       &trans
+                                                                        &trans                    &to 0                  &trans               &trans
             >;
         };
     };
