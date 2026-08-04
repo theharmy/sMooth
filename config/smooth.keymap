@@ -421,7 +421,7 @@
 
         num {
             bindings = <
-&hml LCTRL DE_PLUS  &hml LEFT_ALT DE_MINUS  &hml LEFT_GUI DE_ASTRK  &hml LEFT_SHIFT DE_EQUAL                     &hmr LEFT_SHIFT DE_N5  &hmr LEFT_GUI DE_N6  &hmr LEFT_ALT DE_N0  &hmr LCTRL DE_N4
+&hml LCTRL DE_PLUS  &hml LEFT_ALT DE_MINUS  &hml LEFT_GUI DE_ASTRK  &hml LEFT_SHIFT DE_EQUAL                     &hmr LEFT_SHIFT DE_N4  &hmr LEFT_GUI DE_N5  &hmr LEFT_ALT DE_N6  &hmr LCTRL DE_N0
 &trans              &lt_r4 4 DE_PERCENT     &lt_r4 3 DE_PIPE        &lt_r4 5 DE_FSLH                             &lt_r4 5 DE_N1         &lt_r4 3 DE_N2       &lt_r4 4 DE_N3       &trans
                                                                     &trans                    &to 0      &trans  &trans
             >;
