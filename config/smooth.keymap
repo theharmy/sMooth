@@ -357,7 +357,7 @@
             flavor = "balanced";
         };
 
-        lt_r2: lt_r2 {
+        lt_r4: lt_r4 {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_R2";
             bindings = <&mo>, <&kp>;
